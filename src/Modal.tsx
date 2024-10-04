@@ -17,7 +17,7 @@ const reloadForm = () => {
     }
 }
 
-const Modal = ({state, children, resetForm, className}: ModalProps) => {
+export const Modal = ({state, children, resetForm, className}: ModalProps) => {
     const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
@@ -45,5 +45,3 @@ const Modal = ({state, children, resetForm, className}: ModalProps) => {
         </div>
     )
 }
-
-export default Modal
