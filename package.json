@@ -1,6 +1,6 @@
 {
   "name": "@elducchedev/react-modal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Basic modal for ReactJS project.",
   "main": "app.ts",
   "scripts": {
