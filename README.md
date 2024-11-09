@@ -23,18 +23,16 @@ import { Modal } from "@elducchedev/react-modal";
 interface ModalProps {
   state: boolean;
   children: React.ReactNode;
-  resetForm?: boolean;
   className?: string;
 }
 ```
 
 - **state** : boolean pour savoir s'il doit être {display: none} ou {display : block}
 - **children** : Le tsx qui va s'écrire entre les balises <Modal> </Modal>
-- **resetForm** : Si la modal est utilisé dans un composant qui contient un formulaire, resetForm va vider tous les inputs de ce dernier. Ce champ est optionnel
-- **className** : Permet d'ajouter des styles supplémentaires dans le container qui va s'afficher au centre de l'écran.
+- **className** : Permet d'ajouter des styles supplémentaires dans le container qui va s'afficher au centre de l'écran. Ce champ est optionnel
 
 L'utilisation complète du composant se fais tel quel :
 
 ```javascript
-<Modal state={true | false} className="modal-exemple" resetForm> {children} </Modal>
+<Modal state={true | false} className="some class name"> {children} </Modal>
 ```

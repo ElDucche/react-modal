@@ -5,7 +5,6 @@ import clsx from "clsx"
 interface ModalProps {
     state: boolean
     children: React.ReactNode
-    resetForm? : boolean
     className?: string
 }
 
@@ -17,7 +16,7 @@ const reloadForm = () => {
     }
 }
 
-export const Modal = ({state, children, resetForm, className}: ModalProps) => {
+export const Modal = ({state, children, className}: ModalProps) => {
     const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
@@ -26,9 +25,6 @@ export const Modal = ({state, children, resetForm, className}: ModalProps) => {
 
     const handleCloseModal = () => {
         setIsOpen(false)
-        if (resetForm) {
-            reloadForm()
-        }
     }
 
     document.addEventListener('click', (e) => {
