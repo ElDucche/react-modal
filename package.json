@@ -1,15 +1,13 @@
 {
   "name": "@elducchedev/react-modal",
   "version": "1.0.5",
-  "description": "Basic modal for ReactJS project.",
+  "description": "Basic modal for ReactJS project. Using tailwindcss and React 18.",
   "main": "app.ts",
-  "scripts": {
-    "test": "test"
-  },
   "keywords": [
     "react",
     "modal",
-    "typescript"
+    "typescript",
+    "tailwindcss"
   ],
   "author": "Guillaume LEDUC",
   "license": "ISC",

@@ -11,7 +11,7 @@ interface ModalProps {
 
 const reloadForm = () => {
     if (document.querySelectorAll('form')) {
-        document.querySelectorAll('form').forEach(form => {
+        document.querySelectorAll('form').forEach((form: HTMLFormElement) => {
             form.reset()
         })
     }
@@ -32,7 +32,7 @@ export const Modal = ({state, children, resetForm, className}: ModalProps) => {
     }
 
     document.addEventListener('click', (e) => {
-        if (e.target !== document.getElementById('modal')) {
+        if (e.target !== document.getElementById('modal') && !document.getElementById('modal')?.contains(e.target as Node)) {
             handleCloseModal()
         }
     })
