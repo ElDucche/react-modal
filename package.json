@@ -1,6 +1,6 @@
 {
   "name": "@elducchedev/react-modal",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Basic modal for ReactJS project. Using tailwindcss and React 18.",
   "main": "app.ts",
   "keywords": [
